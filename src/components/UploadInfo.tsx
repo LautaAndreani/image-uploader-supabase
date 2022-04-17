@@ -10,6 +10,7 @@ interface Props {
 
 export default function UploadInfo({ filePathURL }: Props) {
   const [url, setUrl] = useState<string>('')
+
   useEffect(() => {
     downloadImage(filePathURL).then((res) => setUrl(res))
   }, [])
