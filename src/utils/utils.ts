@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { supabase } from "../server"
 
 export const downloadImage = async (path:string) => {
