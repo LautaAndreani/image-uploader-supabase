@@ -31,10 +31,6 @@ function App() {
     } finally {
       setIsLoading(false)
       setIsFinished(true)
-      // setTimeout(() => {
-      //   setIsLoading(false)
-      //   setIsFinished(true)
-      // }, 2000)
     }
   }
 
