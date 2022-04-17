@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { supabase } from "../server"
 
 export const downloadImage = async (path:string) => {
@@ -13,4 +14,10 @@ export const downloadImage = async (path:string) => {
     }finally {
         return urlLink
     }
+  }
+
+  //UploadInfo
+
+  export const handleCopy = (str:string) => {
+    navigator.clipboard.writeText(str);
   }
