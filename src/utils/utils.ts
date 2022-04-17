@@ -14,3 +14,9 @@ export const downloadImage = async (path:string) => {
         return urlLink
     }
   }
+
+  //UploadInfo
+
+  export const handleCopy = (str:string) => {
+    navigator.clipboard.writeText(str);
+  }

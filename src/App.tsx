@@ -52,6 +52,8 @@ function App() {
         <UploadInfo filePathURL={filePathURL} />
       </div>
     )
+  } else {
+    return <UploadImage handleSubmit={handleSubmit} setFileData={setFileData} />
   }
 }
 
